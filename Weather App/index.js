@@ -1,10 +1,5 @@
 // url = "https://api.openweathermap.org/data/2.5/weather?q=surat&appid=639ea0cea1d927d4f4cd906411cbb5e0";
 
-// let cont = document.getElementById('cont')
-// let city = document.querySelector('input');
-// let temp = document.getElementById('temp');
-// let feel = document.getElementById('feel-temp');
-
 let cont = document.getElementById('cont');
 let maincont = document.getElementById('main-cont');
 let load = document.getElementById('load');
@@ -40,14 +35,6 @@ function fetchData() {
                 maincont.innerHTML = "";
                 cont.style.display = 'block';
                 let obj = JSON.parse(this.responseText);
-                // console.log(obj);
-                // console.log(obj.main.temp-273);
-                // console.log(obj.main.temp_min-273);
-                // console.log(obj.main.temp_max-273);
-                // console.log(obj.main.pressure);
-                // console.log(obj.main.feels_like-273);
-                // console.log(obj.clouds.all);
-                // console.log(obj.weather[0].description);
 
                 curr_temp = obj.main.temp - 273;
                 min_temp = obj.main.temp_min - 273;
