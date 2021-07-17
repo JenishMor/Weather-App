@@ -42,11 +42,6 @@ input {
   font-size: 15px;
 }
 
-.fa {
-  color: black;
-  font-size: 30px;
-}
-
 img {
   filter: invert();
   height: 170px;
